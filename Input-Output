@@ -1,0 +1,444 @@
+ 
+JAVA PROGRAMMING
+INDEX
+> INPUT & OUTPUT
+> OPERATIONS
+> DECISION MAKING STATEMENTS-I
+> DECISION MAKING STATEMENTS-II
+> CONTROL STRUCTURES-I
+> CONTROL STRUCTURES-II
+> CONTROL STRUCTURES-III
+> 1D-ARRAY
+> 2D-ARRAY
+> STRINGS-I
+> SREINGS-II
+> RECURSION
+> EXCEPTIONAL HANDLING
+> CLASS AND OBJECT
+> CONSTRUCTOR
+> INHERITANCE
+> POLYMORPHISM
+> ABSTRACTION
+> INTERFACE
+> ENCAPSULATION
+> STRINGS
+> COLLECTIONS
+> ADDITIONAL PRACTICE QUESTIONS
+Input & Output
+
+ Hello World
+
+This is the very first program in the programming language, you have to include an only single header file that is import java.util.Scanner;, this header file contains the declaration of System.out.println()function. System.out.println() is used to display the message as well as the value on the standard output device (monitor), use of printf function is very easy, you have to just pass the string (message) that you want to print on the screen within inverted commas ("message").
+
+Sample Output:
+
+Hello World
+
+Input (stdin)
+
+Output (stdout)
+
+Hello World
+
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+             public static void main(String args[])
+
+             {
+
+             System.out.println("Hello World");
+
+             }
+
+}
+
+Hello World with tab
+
+There are few escape sequences which is used for formatting the output in the programming language,
+
+you have to use \t escape sequence in order to provide 4 to 5 spaces between words in the output console.
+
+Enter the escape sequence directly into the System.out. println() statement's within the inverted commas ("mes\tsage").
+
+Sample Output:
+
+Hello World Hello World
+
+Input (stdin)
+
+
+Output (stdout)
+
+Hello World        Hello World
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main{
+
+    public static void main(String args[])
+
+    {
+
+        System.out.println("Hello World\tHello World");
+
+    }
+
+}
+
+Hello World with new line
+
+There are few escape sequences which is used for formatting the output in the programming language,
+
+you have to use \n escape sequence in order to provide a new line between words in the output console.
+
+Enter the escape sequence directly into the System.out.println() statement's within the inverted commas ("mes\nsage").
+
+
+Sample Output:
+
+Hello World
+
+Hello World
+
+Input (stdin)
+
+
+Output (stdout)
+
+Hello WorldHello World 
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        System.out.println("Hello World\nHello World");
+
+    }
+
+}
+
+Character Input
+
+Two commonly used functions for I/O (Input/Output) are System.out.println() and System.in(). Write a program to get a character as input and print it. The Scanner class reads formatted input from the keyboard. When the user enters a character, it is stored in the variable test character.
+
+Sample Input:
+
+z
+
+Sample Output:
+
+z
+
+Input (stdin)
+
+a
+
+
+Output (stdout)
+
+a
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        Scanner s = new Scanner(System.in);
+
+      char a = s.next().charAt(0);
+
+      System.out.print(a);
+
+    }
+
+}
+
+Integer Input
+
+Java programming has several in-built functions to perform input and output tasks. Two commonly used functions for I/O (Input/Output) are System.out.println() and System.in(). Write a program to get an integer as input and print it. The System.in() function reads formatted input from the keyboard. When the user enters an integer, it is stored in variable testInteger. Format string %d is used in case of integer types. Note the '&' sign before testInteger; &testInteger gets the address of testInteger and the value is stored in that address.
+
+
+Sample Input:
+
+56
+
+ 
+
+Sample Output:
+
+56
+
+Input (stdin)
+
+0
+
+
+Output (stdout)
+
+0
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        Scanner s = new Scanner(System.in);
+
+      int a = s.nextInt();
+
+      System.out.print(a);
+
+    }
+
+}
+
+Float Input
+
+Write a program to get float as input and print it. The Scanner class reads formatted input from the keyboard. When the user enters the float value, it is stored in variable testFloat. Use '%.2f' in the System.out.printf() to display float value with 2 precisions.
+
+Sample Input - 1:
+
+56.2425
+
+ 
+
+Sample Output - 1:
+
+56.24
+
+ 
+
+Sample Input - 2:
+
+92.00
+
+ 
+
+Sample Output - 2:
+
+92.00
+
+Input (stdin)
+
+14
+
+
+Output (stdout)
+
+14.00
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      Float a = s.nextFloat();
+
+      System.out.printf("%.2f",a);
+
+    }
+
+}
+
+String Input
+
+Write a program to get the string as input and print it. When the user enters a string (i.e) char array, it is stored in variable testString.
+
+
+Sample Input - 1:
+
+Programmer
+
+ 
+
+Sample Output - 1:
+
+Programmer
+
+ 
+
+Sample Input - 2:
+
+897
+
+ 
+
+Sample Output - 2:
+
+897
+
+Input (stdin)
+
+face
+
+
+Output (stdout)
+
+face
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.next();
+
+      System.out.print(a);        
+
+    }
+
+}
+
+Unicode Values-I
+
+Write a program to get a character as input and print its Unicode value. When a character is entered, the character itself is not stored. Instead, a numeric value(Unicode value) is stored.
+
+
+Sample Input :
+
+g
+
+Sample Output:
+
+103
+
+Input (stdin)
+
+G
+
+
+Output (stdout)
+
+71
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      char a = s.next().charAt(0);
+
+      System.out.print((int)a);
+
+    }
+
+}
+
+Unicode Values-II
+
+Write a program to get a number(Unicode values) as input and print its equivalent character. You can display a character if you know ASCII code of that character.
+
+
+Sample Input:
+
+103
+
+Sample Output:
+
+g
+
+Input (stdin)
+
+71
+
+
+Output (stdout)
+
+G
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+       Scanner s = new Scanner(System.in);
+
+       int a = s.nextInt();
+
+      System.out.print((char)a);
+
+    }
+
+}
+
