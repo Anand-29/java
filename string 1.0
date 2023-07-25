@@ -1,0 +1,707 @@
+Print the String
+
+Write a program to scan the string from the user and to print it.
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+Hello
+
+ 
+
+Sample Output:
+
+Hello
+
+Input (stdin)
+
+Hello
+
+
+Output (stdout)
+
+Hello
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      System.out.print(a);
+
+    }
+
+}
+
+Print the String 2
+
+Write a program to scan the string from the user and to print it.
+
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+Hello World
+
+ 
+
+Sample Output:
+
+Hello World
+
+Input (stdin)
+
+Hello World
+
+
+Output (stdout)
+
+Hello World
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      System.out.println(a);
+
+    }
+
+}
+
+String - Length - I
+
+Write a program to find the length of the given string using string library functions:
+
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+Face
+
+ 
+
+Sample Output:
+
+4
+
+Input (stdin)
+
+Face
+
+
+Output (stdout)
+
+4
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      System.out.println(a.length());
+
+    }
+
+}
+
+String - Copy
+
+Write a program to copy a string from one variable to other using string library functions:
+
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+hello
+
+ 
+
+Sample & Output:
+
+hello
+
+Input (stdin)
+
+hello
+
+
+Output (stdout)
+
+hello
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      System.out.println(a);
+
+    }
+
+}
+
+String - Reverse
+
+Write a program to find the reverse of the given without string using string library functions:
+
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+hello
+
+ 
+
+Sample & Output:
+
+olleh
+
+Input (stdin)
+
+hello
+
+
+Output (stdout)
+
+olleh
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner sc = new Scanner(System.in);
+
+      String s = sc.nextLine();
+
+      int i = s.length();
+
+      while(i>0)
+
+      {
+
+        System.out.print(s.charAt(i-1));
+
+        i--;
+
+      }
+
+    }
+
+}
+
+String - Compare
+
+Write a program to find whether the given two strings are same or not using string library functions:
+
+
+ 
+
+Input Format:
+
+Input consist of 2 string.
+
+ 
+
+Output Format:
+
+If two strings are same display “Strings are same”,else display “Strings are not same”.
+
+ 
+
+Sample Input:
+
+hello
+
+ 
+
+Sample & Output:
+
+hello
+
+Input (stdin)
+
+hello
+hello
+
+
+Output (stdout)
+
+Strings are same
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      String b = s.nextLine();
+
+      if(a.equals(b) == true)
+
+      {
+
+        System.out.println("Strings are same");
+
+      }
+
+      else
+
+      {
+
+        System.out.println("Strings are not same");
+
+      }
+
+    }
+
+}
+
+String - Upper case
+
+Write a program to change the given string to uppercase without using string library functions
+
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+good
+
+ 
+
+Sample Output:
+
+GOOD
+
+Input (stdin)
+
+good
+
+
+Output (stdout)
+
+GOOD
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      System.out.println(a.toUpperCase());
+
+    }
+
+}
+
+String - Lower case
+
+Write a program to change the given string to lowercase using string library functions
+
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+FACE
+
+ 
+
+Sample Output:
+
+face
+
+Input (stdin)
+
+FACE
+
+
+Output (stdout)
+
+face
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      System.out.println(a.toLowerCase());
+
+    }
+
+}
+
+String - Palindrome
+
+Write a program to find whether the given string is palindrome or not without using string library functions:
+
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Output Format:
+
+If the given string is a Palindrome display “Palindrome”, else display “Not a Palindrome”.
+
+ 
+
+ 
+
+Sample Input:
+
+computer
+
+ 
+
+Sample Output:
+
+Not a Palindrome
+
+Input (stdin)
+
+amma
+
+
+Output (stdout)
+
+Palindrome
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String a = s.nextLine();
+
+      String b = "";
+
+      int n = a.length();
+
+      for(int i = n - 1; i >= 0; i--)
+
+      {
+
+        b = b + a.charAt(i);
+
+      }
+
+      if(a.equalsIgnoreCase(b))
+
+      {
+
+        System.out.println("Palindrome");
+
+      }
+
+      else
+
+      {
+
+        System.out.println("Not a Palindrome");
+
+      }
+
+    }
+
+}
+
+String - Count Vowels
+
+Write a program to count the number of vowels in the given string:
+
+
+ 
+
+Input Format:
+
+Input consist of 1 string.
+
+ 
+
+Sample Input:
+
+face
+
+ 
+
+Sample & Output:
+
+2
+
+Input (stdin)
+
+face
+
+
+Output (stdout)
+
+2
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      int c = 0;
+
+      Scanner sc = new Scanner(System.in);
+
+      String s = sc.nextLine();
+
+      for(int i=0; i<s.length();i++)
+
+      {
+
+        char ch = s.charAt(i);
+
+        if(ch == 'a'|| ch == 'e'|| ch == 'i' ||ch == 'o' ||ch == 'u'||ch == ' '){
+
+          c++;
+
+        }
+
+      }
+
+      System.out.println(c);
+
+    }
+
+}
+
+String - Concatenate
+
+There were two best friends. They had a fight between them and they were not talked with each other.
+
+Help those two peoples to join again and let them enjoyed. Find the concatenation of given two strings using
+
+string library functions:
+
+
+ 
+
+Input Format:
+
+Input consist of 2 string.
+
+ 
+
+Sample Input:
+
+Face
+
+Academy
+
+ 
+
+Sample Output:
+
+FaceAcademy
+
+Input (stdin)
+
+Face
+Academy
+
+
+Output (stdout)
+
+FaceAcademy
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      int c = 0;
+
+      Scanner sc = new Scanner(System.in);
+
+      String s = sc.nextLine();
+
+      String t = sc.nextLine();
+
+      System.out.println(s.concat(t));
+
+    }
+
+}
+
