@@ -1,0 +1,1214 @@
+ Comparing 2 integers
+
+Get two integers x and y from the user and write a program to relate 2 integers as equal to, less than or greater than.
+
+
+Input format:
+
+Input consist of 2 integers
+
+The first input corresponds to the first number(x)
+
+The second input corresponds to the second number(y)
+
+ 
+
+Output format:
+
+If the first number is equal to the second number, print "x and y are equal". Otherwise, print "x greater than y" or "x less than y"
+
+ 
+
+Sample Input:
+
+6
+
+8
+
+ 
+
+Sample Output:
+
+6 less than 8
+
+ 
+
+Input (stdin)
+
+18
+10
+
+
+Output (stdout)
+
+18 greater than 10
+
+ 
+
+Input (stdin)
+
+5
+3
+
+
+Output (stdout)
+
+5 greater than 3
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      int a = s.nextInt();
+
+      int b = s.nextInt();
+
+      if(a<b)
+
+      {
+
+      System.out.printf("%d less than %d",a,b);
+
+      }
+
+      else if(a>b)
+
+      {
+
+      System.out.printf("%d greater than %d",a,b);
+
+      }
+
+      else
+
+      {
+
+      System.out.printf("%d and %d are equal",a,b);
+
+      }
+
+    }
+
+}
+
+Checking alphabets
+
+Write a program to check whether the given character is vowel or consonant
+
+
+Input format:
+
+The input consist of a character
+
+ 
+
+Output format:
+
+The output consists of a below-given string 
+
+“Vowel” / “Consonant” / “Not an alphabet”
+
+ 
+
+Sample Input:
+
+e
+
+ 
+
+Sample Output:
+
+Vowel
+
+Input (stdin)
+
+$
+
+
+Output (stdout)
+
+Not an alphabet
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      char ch = s.next().charAt(0);
+
+      if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+
+      {
+
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+
+        {
+
+          System.out.printf("Vowel");
+
+        }
+
+        else
+
+        {
+
+          System.out.printf("Consonant");
+
+        }
+
+      }
+
+      else
+
+      {
+
+        System.out.printf("Not an alphabet");
+
+      }
+
+    }
+
+}
+
+Anna University Grading System
+
+The newly appointed Vice-Chancellor of Anna University wanted to create an automated grading system
+
+for the students to check their grade. When a student enters a mark, the grading system
+
+displays the corresponding grade. Write a program to solve the given problem.
+
+The grades for marks 100 - S, 90-99 is A, 80-89 is B, 70-79 is C, 60-69 is D, 50-59 is E and less than 50 is F.
+
+
+Input format:
+
+The input consists of one integer which corresponds to the marks scored by the student
+
+ 
+
+Output format:
+
+If a student marks greater than 100, print "Invalid Input". Otherwise, print the grade.
+
+ 
+
+Sample Input:
+
+78
+
+ 
+
+Sample Output:
+
+C
+
+Input (stdin)
+
+56
+
+
+Output (stdout)
+
+E
+
+ 
+
+Input (stdin)
+
+80
+
+
+Output (stdout)
+
+B
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      int a = s.nextInt();
+
+      if (a == 100)
+
+      {
+
+        System.out.printf("S");
+
+      }
+
+      else
+
+      {
+
+        if ((a >= 90) && (a <= 99))
+
+        {
+
+          System.out.printf("A");
+
+        }
+
+        else
+
+        {
+
+          if ((a >= 80) && (a <= 89))
+
+          {
+
+            System.out.printf("B");
+
+          }
+
+          else
+
+          {
+
+            if ((a >= 70) && (a <= 79))
+
+            {
+
+              System.out.printf("C");
+
+            }
+
+            else
+
+            {
+
+              if ((a >= 60) && (a <= 69))
+
+              {
+
+                System.out.printf("D");
+
+              }
+
+              else
+
+              {
+
+                if ((a >= 50) && (a <= 59))
+
+                {
+
+                  System.out.printf("E");
+
+                }
+
+                else
+
+                {
+
+                  System.out.printf("F");
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+}
+
+Profit or loss
+
+A fruit seller buys a dozen of banana at Rs.X. He sells 1 banana at Rs.Y.
+
+Write a program to determine the profit or loss in Rs. for the fruitseller.
+
+
+Input format:
+
+Input consists of 2 floating point numbers
+
+The first input corresponds to the total cost(X)
+
+The second input corresponds to the sold cost(Y)
+
+ 
+
+Output format:
+
+Print "Profit or Loss" with Rupees.
+
+ 
+
+Sample Input:
+
+60
+
+4
+
+ 
+
+Sample Output:
+
+Loss : Rs.12.00
+
+Input (stdin)
+
+100.0
+3
+
+
+Output (stdout)
+
+Loss : Rs.64.00
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        Scanner s=new Scanner(System.in);
+
+        float a=s.nextFloat();
+
+        float b=s.nextFloat();
+
+        if(a>(b*12))
+
+        System.out.printf("Loss : Rs.%.2f",(a-b*12));
+
+        else if(a<(b*12))
+
+        System.out.printf("Profit : Rs.%.2f",(a-b*12));
+
+        else
+
+        System.out.println("No profit nor loss");
+
+    }
+
+}
+
+Fee collection
+
+Write a program to determine the fee amount to be collected from a student.  Refer the table below for fee details. Student Type Student Type denoted as Fee Details   Merit Seat Day Scholar MSDS Tuition fee + Bus fee Merit Seat Hosteller MSH Tuition fee + Hostel fee Management Seat Day Scholar MGSDS 150% of Tuition fee + Bus fee Management Seat Hosteller MGSH 150% of Tuition fee + Hostel fee
+
+
+Input format:
+
+The first input corresponds to the student type
+
+The second input corresponds to the tuition fee
+
+The third input corresponds to the bus fee
+
+The fourth input corresponds to the hostel fees
+
+ 
+
+Output format:
+
+Print the total fee amount of the corresponding student with 2 decimal places. 
+
+Refer below sample output for formatting
+
+ 
+
+Sample Input:
+
+MSH
+
+40000
+
+12000
+
+50000
+
+ 
+
+Sample Output:
+
+90000.00
+
+Input (stdin)
+
+MSDS
+50000
+12000
+20000
+
+
+Output (stdout)
+
+62000.00
+
+ 
+
+Input (stdin)
+
+MSGH
+5000
+3000
+2000
+
+
+Output (stdout)
+
+Invalid
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      String t = s.next();
+
+      int f = s.nextInt();
+
+      int b = s.nextInt();
+
+      int h = s.nextInt();
+
+      double a = f+b;
+
+      double c = f+h;
+
+      double d = (((f/100)*150)+b);
+
+      double e = (((f/100)*150)+h);
+
+      switch(t){
+
+        case "MSDS":
+
+          System.out.printf("%.2f",a);
+
+          break;
+
+        case "MSH":
+
+          System.out.printf("%.2f",c);
+
+          break;
+
+        case "MGSDS":
+
+          System.out.printf("%.2f",d);
+
+          break;
+
+        case "MGSH":
+
+          System.out.printf("%.2f",e);
+
+          break;
+
+        default:
+
+          System.out.printf("Invalid");
+
+      }
+
+    }
+
+}
+
+Age Detector
+
+Ask a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99"). Write a program to find the users current age in years.
+
+
+Input format:
+
+Input consists of 2 integers
+
+he first integer corresponds to the last 2 digits of the birth year
+
+The second integer corresponds to the last 2 digits of the current year
+
+ 
+
+Output format:
+
+Print the user's current age
+
+Refer below sample output for formatting.
+
+ 
+
+Sample Input:
+
+62
+
+00
+
+ 
+
+Sample Output:
+
+38
+
+Input (stdin)
+
+30
+23
+
+
+Output (stdout)
+
+93
+
+ 
+
+Input (stdin)
+
+50
+20
+
+
+Output (stdout)
+
+70
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      int a = s.nextInt();
+
+      int b = s.nextInt();
+
+      int c = (100-a)+b;
+
+      int d = b-a;
+
+      if(a>b)
+
+      {
+
+        System.out.printf("%d",c);
+
+      }
+
+      else
+
+      {
+
+        System.out.printf("%d",d);
+
+      }
+
+    }
+
+}
+
+Lab Allocation I
+
+There are 3 labs in the CSE department(L1, L2, and L3) with a seating capacity of x, y, and z respectively. Find the lab which has minimal seating capacity. 
+
+
+Input format:
+
+Input consists of 3 integers.
+
+The first input denotes the seating capacity of L1(x)
+
+The second input denotes the seating capacity of L2(y)
+
+The third input denotes the seating capacity of L3(z)
+
+ 
+
+Output format:
+
+Print the minimal seating lab capacity
+
+ 
+
+Sample Input:
+
+30
+
+40
+
+20
+
+ 
+
+Sample Output:
+
+L3
+
+Input (stdin)
+
+60
+30
+50
+
+
+Output (stdout)
+
+L2
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner s = new Scanner(System.in);
+
+      int x = s.nextInt();
+
+      int y = s.nextInt();
+
+      int z = s.nextInt();
+
+      if((x<y) && (x<z))
+
+      {
+
+        System.out.println("L1");
+
+      }
+
+      else if((y<x) && (y<z))
+
+      {
+
+        System.out.println("L2");
+
+      }
+
+      else
+
+      {
+
+        System.out.println("L3");
+
+      }
+
+    }
+
+}
+
+Lab Allocation II
+
+There are 3 labs in the CSE department are L1, L2, and L3 with a seating capacity of x, y, and z respectively. One of the 3 labs has been allocated for FACE training. Out of the available labs, find the lab which has minimal seating capacity.
+
+
+Input format:
+
+Input consists of 3 integers and a string
+
+The first input denotes the seating capacity of L1(x)
+
+The second input denotes the seating capacity of L2(y)
+
+The third input denotes the seating capacity of L3(z)
+
+The fourth input denotes the lab which is allocated for FACE training
+
+ 
+
+Output format:
+
+Print the minimal seating capacity lab amongst the available labs.
+
+ 
+
+Sample Input:
+
+30
+
+40
+
+20
+
+L3
+
+ 
+
+Sample Output:
+
+L1
+
+Input (stdin)
+
+90
+50
+60
+L1
+
+
+Output (stdout)
+
+L2
+
+ 
+
+Input (stdin)
+
+40
+20
+30
+L3
+
+
+Output (stdout)
+
+L2
+
+ 
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+   public static void main(String args[])
+
+   {
+
+       Scanner  s=new Scanner(System.in);
+
+       int x=s.nextInt();
+
+       int y=s.nextInt();
+
+       int z=s.nextInt();
+
+       String str=s.next();
+
+       if(str.equals("L1"))
+
+       {
+
+           if(y<z)
+
+           {
+
+               System.out.println("L2");
+
+           }
+
+           else
+
+           {
+
+               System.out.println("L3");
+
+           }
+
+       }
+
+       else if(str.equals("L2"))
+
+       {
+
+           if(x<z)
+
+           {
+
+               System.out.println("L1");
+
+           }
+
+           else
+
+           {
+
+               System.out.println("L3");
+
+           }
+
+       }
+
+       else if(str.equals("L3"))
+
+       {
+
+           if(x<y)
+
+           {
+
+               System.out.println("L1");
+
+           }
+
+           else
+
+           {
+
+               System.out.println("L2");
+
+           }
+
+       }
+
+       
+
+   }
+
+}
+
+Lab Allocation III
+
+There are 3 labs in the CSE department are L1, L2, and L3 with a seating capacity of x, y, and z. A single lab needs to be allocated to a class of 'n' students. How many of the 3 labs can accommodate 'n' students?
+
+
+Input format:
+
+Input consists of 4 integers
+
+The first input denotes the seating capacity of L1(x)
+
+The second input denotes the seating capacity of L2(y)
+
+The third input denotes the seating capacity of L3(z)
+
+The fourth input denotes the number of students(n)
+
+ 
+
+Output format:
+
+Print the number of labs which can accommodate the 'n' number of students
+
+Refer the Sample output for formatting
+
+ 
+
+Sample Input:
+
+30
+
+40
+
+20
+
+25
+
+ 
+
+Sample Output:
+
+2 
+
+Input (stdin)
+
+60
+30
+90
+20
+
+
+Output (stdout)
+
+3
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+   public static void main(String args[])
+
+   {
+
+       Scanner s=new Scanner(System.in);
+
+       int x=s.nextInt();
+
+       int y=s.nextInt();
+
+       int z=s.nextInt();
+
+       int n=s.nextInt();
+
+       if(n<=x&&n<=y&&n<=z)
+
+       {
+
+           System.out.println("3");
+
+       }
+
+       else if((n<=x&&n<=y) ||(n<=x&&n<=z) ||(n<=y&&n<=z))
+
+       {
+
+           System.out.println("2");
+
+       }
+
+       else if(n<=x||n<=y||n<=z)
+
+       {
+
+           System.out.println("1");
+
+       }
+
+       else
+
+       {
+
+           System.out.println("0");
+
+       }
+
+   }
+
+}
+
+Lab Allocation IV
+
+There are 3 labs in the CSE department. The labs are L1, L2, and L3 with a seating capacity of x, y, and z respectively. A single lab needs to be allocated to a class of 'n' students. The labs need to be utilized to the maximum i.e the number of systems used should not be minimal. Which lab needs to be allocated to this class?
+
+
+Input format:
+
+Input consists of 4 integers
+
+The first input denotes 'x'
+
+The second input denotes 'y'
+
+The third input denotes 'z'
+
+The fourth input denotes 'n'
+
+ 
+
+Output format:
+
+Print the lab which is suitable for 'n' number of students
+
+Refer the Sample output for formatting
+
+ 
+
+Sample Input:
+
+30
+
+40
+
+20
+
+25
+
+ 
+
+Sample Output:
+
+L1
+
+ 
+
+Input (stdin)
+
+90
+50
+60
+40
+
+
+Output (stdout)
+
+L2
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+        int l1,l2,l3,n;
+
+        Scanner s=new Scanner(System.in);
+
+        l1=s.nextInt();
+
+        l2=s.nextInt();
+
+        l3=s.nextInt();
+
+        n=s.nextInt();
+
+        if(n<l1&&n<l2&&n<l3)
+
+        {
+
+            if(l1<l2&&l1<l3)
+
+            System.out.println("L1");
+
+            else if(l2<l3)
+
+            System.out.println("L2");
+
+            else
+
+            System.out.println("L3");
+
+        }
+
+        else if(n<l1&&n<l2)
+
+        {
+
+            if(l1<l2)
+
+            System.out.println("L1");
+
+            else
+
+            System.out.println("L2");
+
+        }
+
+        else if(n<l1&&n<l3)
+
+        {
+
+            if(l1<l3)
+
+            System.out.println("L1");
+
+            else
+
+            System.out.println("L3");
+
+        }
+
+        else if(n<l2&&n<l3)
+
+        {
+
+            if(l2<l3)
+
+            System.out.println("L2");
+
+            else
+
+            System.out.println("L3");
+
+        }
+
+        else if(n<l1)
+
+        System.out.println("L1");
+
+        else if(n<l2)
+
+        System.out.println("L2");
+
+        else if(n<l3)
+
+        System.out.println("L3");
+
+        else
+
+        System.out.println("0");
+
+    }
+
+}
+
