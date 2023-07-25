@@ -1,0 +1,1001 @@
+Maximum Element In The Matrix
+
+A group of children playing in the garden. The old man needs help but he needs elder boy from the children . Help the old man to find the elder boy from that children. Write a program to find the maximum element in the matrix.
+
+
+ 
+
+Input Format:
+
+The input consists of (m*n+2) integers. The first integer corresponds to m, the number of rows in the matrix and the second integer corresponds to n, the number of columns in the matrix. The remaining integers correspond to the elements in the matrix. The elements are read in row wise order, first row first, then second row and so on. Assume that the maximum value of m and n is 10.
+
+ 
+
+Output Format:
+
+Refer sample output for details.
+
+ 
+
+Sample Input:
+
+ 
+
+3
+
+2
+
+4 5
+
+6 9
+
+0 3
+
+ Sample Output:
+
+ 9
+
+Input (stdin)
+
+2
+2
+56 62
+96 36
+
+
+Output (stdout)
+
+96
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+public class Main
+
+{
+
+  public static void main(String[] args) 
+
+  {
+
+  int rows; 
+
+  int columns;
+
+  Scanner scanner = new Scanner (System.in);
+
+  rows = scanner.nextInt(); 
+
+  columns = scanner.nextInt(); 
+
+  int[][] matrix = new int [rows][columns];
+
+  for (int i = 0; i < rows; i++) 
+
+  {
+
+     for (int j = 0; j < columns; j++) 
+
+     {
+
+         matrix[i][j] = scanner.nextInt();
+
+     }
+
+  }
+
+  int maxNum = matrix[0][0];
+
+  for (int i = 0; i < matrix.length; i++) 
+
+  {
+
+   for (int j = 0; j < matrix[i].length; j++) 
+
+   {
+
+    if(maxNum < matrix[i][j])
+
+    {
+
+     maxNum = matrix[i][j];
+
+    }
+
+   }
+
+  }
+
+  System.out.println(maxNum);
+
+ }
+
+}
+
+Maximum Element In Each Row
+
+There are some students in the class. The class Adviser needs a recruitment's process for above 60% students.
+
+In each and every row there was a student above 60% . Help your adviser to find the students in each row.
+
+
+ 
+
+Input Format:
+
+The input consists of (m*n+2) integers. The first integer corresponds to m,
+
+the number of rows in the matrix and the second integer corresponds to n, the number of columns in the matrix.
+
+The remaining integers correspond to the elements in the matrix.
+
+The elements are read in row wise order, first row first, then second row and so on.
+
+ Assume that the maximum value of m and n is 10.
+
+ 
+
+Output Format:
+
+Refer sample output for details.
+
+ 
+
+Sample Input:
+
+ 
+
+3
+
+2
+
+4 5
+
+6 9
+
+0 3
+
+ Sample Output:
+
+5
+
+9
+
+3
+
+Input (stdin)
+
+2
+2
+56 62
+96 36
+
+
+Output (stdout)
+
+62
+96
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+Scanner s = new Scanner(System.in);
+
+int m = s.nextInt();
+
+int n = s.nextInt();
+
+int[][] a = new int[m][n];
+
+for( int i = 0 ; i < m ; i++ ){
+
+    for( int j = 0 ; j < n ; j++ ){
+
+        a[i][j] = s.nextInt();       
+
+    }
+
+}
+
+int max1 = a[0][0];
+
+for( int i = 0 ; i < m ; i++ ){
+
+    for( int j = 0 ; j < n ; j++ ){
+
+        if( a[i][j] > max1 )
+
+            max1 = a[i][j];
+
+    }
+
+    System.out.println(max1);
+
+    max1 = 0;
+
+}
+
+}
+
+}
+
+Maximum Element In Each Column
+
+In a family the people are arranged in rows and columns.
+
+Male persons in the families arranged in a row and females are arranged in a column.
+
+Find the biggest women in the each column.Help me to find the biggest women.
+
+Write a program to find the maximum element in each column of the matrix.
+
+
+ 
+
+Input Format:
+
+The input consists of (m*n+2) integers. The first integer corresponds to m,
+
+the number of rows in the matrix and the second integer corresponds to n,
+
+the number of columns in the matrix. The remaining integers correspond to the elements in the matrix.
+
+The elements are read in row wise order, first row first, then second row and so on.
+
+Assume that the maximum value of m and n is 10.
+
+ 
+
+Output Format:
+
+Refer sample output for details.
+
+ 
+
+Sample Input:
+
+ 
+
+3
+
+2
+
+4 5
+
+6 9
+
+0 3
+
+ Sample Output:
+
+6 
+
+9
+
+Input (stdin)
+
+2
+2
+56 62
+96 36
+
+
+Output (stdout)
+
+96
+62
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+Scanner s = new Scanner(System.in);
+
+int m = s.nextInt();
+
+int n = s.nextInt();
+
+int[][] a = new int[m][n];
+
+for( int i = 0 ; i < m ; i++ ){
+
+    for( int j = 0 ; j < n ; j++ ){
+
+        a[i][j] = s.nextInt();       
+
+    }
+
+}
+
+int max1 = a[0][0];
+
+for( int i = 0 ; i < n ; i++ ){
+
+    for( int j = 0 ; j < m ; j++ ){
+
+        if( a[j][i] > max1 )
+
+            max1 = a[j][i];
+
+    }
+
+    System.out.println(max1);
+
+    max1 = 0;
+
+}
+
+}
+
+}
+
+Matrix Sum
+
+Shobitha and Siddhesh were playing puzzles. They are having two puzzles in their hand.
+
+They need to join the puzzle to get the correct puzzle. Help them to find the puzzle.
+
+
+ 
+
+Input Format:
+
+The input consists of (m*n+2) integers. The first integer corresponds to m,
+
+the number of rows in the matrix and the second integer corresponds to n, the number of columns in the matrix.
+
+The remaining integers correspond to the elements in the matrix.
+
+The elements are read in row-wise order, first row first, then second row and so on.
+
+Assume that the maximum value of m and n is 10.
+
+ 
+
+Output Format:
+
+Refer sample output for details.
+
+ 
+
+Sample Input 1:
+
+3
+
+2
+
+4 5
+
+6 9
+
+0 3
+
+ 
+
+Sample Output 1:
+
+ 27
+
+Input (stdin)
+
+2
+2
+45 65
+23 62
+
+
+Output (stdout)
+
+195
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+Scanner s = new Scanner(System.in);
+
+int m = s.nextInt();
+
+int n = s.nextInt();
+
+int sum = 0; 
+
+int[][] a = new int[m][n];
+
+for( int i = 0 ; i < m ; i++ ){
+
+    for( int  j = 0 ; j < n ; j++ ){
+
+        a[i][j] = s.nextInt();
+
+    }
+
+}
+
+for( int i = 0 ; i < m ; i++ ){
+
+    for( int  j = 0 ; j < n ; j++ ){
+
+        sum += a[i][j];
+
+    }
+
+}
+
+System.out.println(sum);
+
+}
+
+}
+
+Magic Square
+
+A magic square is an arrangement of numbers (usually integers) in a square grid,
+
+where the numbers in each row, and in each column, and the numbers in the forward and backward main diagonals,
+
+ all add up to the same number. Write a program to find whether a given matrix is a magic square or not.
+
+
+ 
+
+Input Format:
+
+The input consists of (n*n+1) integers.
+
+The first integer corresponds to the number of rows/columns in the matrix.
+
+The remaining integers correspond to the elements in the matrix.
+
+The elements are read in rowwise order, first row first, then second row and so on.
+
+Assume that the maximum value of m and n is 5.
+
+ 
+
+Output Format:
+
+Print "yes" if it is a magic square. Print "no" if it is not a magic square.
+
+ 
+
+Sample Input 1:
+
+2
+
+4 5
+
+5 4
+
+ 
+
+Sample Output 1:
+
+no
+
+·         
+
+Input (stdin)
+
+2
+4 5
+5 4
+
+
+Output (stdout)
+
+no
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+Scanner s = new Scanner(System.in);
+
+int n = s.nextInt();
+
+int[][] a = new int[n][n];
+
+int sum1=0,sum2=0;
+
+for( int i = 0 ; i < n ; i++ ){
+
+    for( int j = 0 ; j < n ; j++ ){
+
+        a[i][j] = s.nextInt();       
+
+    }
+
+}
+
+    for( int i = 0 ; i < n ; i++ ){
+
+    for( int j = 0 ; j < n ; j++ ){
+
+        if ( i == j)
+
+            sum1 += a[i][j];
+
+        if( i + j == ( n - 1 ) )
+
+            sum2 += a[i][j];
+
+    }
+
+}
+
+if( sum1 != sum2 )
+
+    System.out.println("no");
+
+else{
+
+    int s1=0,s2=0,s3=0;
+
+    int a1=0,a2=0,a3=0;
+
+    for( int i = 0 ; i < n ; i++ ){
+
+        for( int j = 0 ; j < n ; j++ ){
+
+            if( i == 0 )
+
+                s1+= a[i][j];
+
+            if( i == 1 )
+
+                s2 += a[i][j];
+
+            if( i == 2 )
+
+                s3 += a[i][j];
+
+            if( j == 0 )
+
+                a1 += a[i][j];
+
+            if( j == 1 )
+
+                a2 += a[i][j];
+
+            if( j == 2 )
+
+                a3 += a[i][j];
+
+        }
+
+    }
+
+    if( s1 == a1 && s2 == a2 && s3 == a3 )
+
+           System.out.println("yes");
+
+    else
+
+            System.out.println("no");
+
+}
+
+}
+
+}
+
+Diagonal Matrix
+
+Diagonal Matrix. A square matrix which has zeros everywhere other than the main diagonal.
+
+Entries on the main diagonal may be any number, including 0.
+
+ Write a program to find whether a given matrix is a diagonal matrix or not.
+
+
+ 
+
+Input Format:
+
+The input consists of (n*n+1) integers.
+
+The first integer corresponds to the number of rows/columns in the matrix.
+
+The remaining integers correspond to the elements in the matrix.
+
+The elements are read in rowwise order, first row first,
+
+then second row and so on. Assume that the maximum value of m and n is 5.
+
+ 
+
+Output Format:
+
+Print yes if it is a diagonal matrix. Print no if it is not a diagonal matrix.
+
+ 
+
+Sample Input :
+
+2
+
+4 5
+
+5 4
+
+ 
+
+Sample Output:
+
+no
+
+Input (stdin)
+
+2
+4 5
+5 4
+
+
+Output (stdout)
+
+no
+
+ 
+
+Program :-
+
+import java.util.*;
+
+class Main
+
+{
+
+    public static void main(String args[])throws Exception
+
+    {
+
+        Scanner sc=new Scanner(System.in);
+
+        int m=sc.nextInt();
+
+        int A[][]=new int[m][m];
+
+        for(int i=0;i<m;i++)
+
+        {
+
+            for(int j=0;j<m;j++)
+
+            {
+
+                A[i][j]=sc.nextInt();
+
+            }
+
+        }
+
+      int p=0, q=0;
+
+        for(int i=0;i<m;i++)
+
+        {
+
+            for(int j=0;j<m;j++)
+
+            {
+
+                if(i!=j && A[i][j]!=0) 
+
+                {
+
+                    p=1;
+
+                    break;
+
+                }
+
+                if(i==j && A[i][j]==0) 
+
+                {
+
+                    q++;
+
+                }
+
+            }
+
+        }        
+
+        if(p==0 && q<m)
+
+            System.out.println("yes");
+
+        else
+
+            System.out.println("no");
+
+    }
+
+}
+
+Upper Triangular Matrix
+
+An upper triangular matrix is a square matrix in which all the elements below the diagonal are zero.
+
+That is, all the non-zero elements are in the upper triangle:
+
+Write a JAVA program to find whether a given matrix is an upper triangular matrix or not.
+
+
+Input Format:
+
+The input consists of (n*n+1) integers.
+
+The first integer corresponds to the number of rows/columns in the matrix.
+
+The remaining integers correspond to the elements in the matrix. The elements are read in rowwise order,
+
+first row first, then second row and so on. Assume that the maximum value of m and n is 5.
+
+ 
+
+Output Format:
+
+Print "yes" if it is an upper triangular matrix . Print "no" if it is not an upper triangular matrix.
+
+ 
+
+Sample Input 1:
+
+2
+
+1 2
+
+0 3
+
+ 
+
+Sample Output 1:
+
+yes
+
+Input (stdin)
+
+2
+1 2
+0 3
+
+
+Output (stdout)
+
+yes
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main {
+
+    public static void main(String args[]) {
+
+        int row, col;
+
+        boolean isUpperTriangular = true;
+
+        Scanner scanner = new Scanner(System.in);
+
+        row = scanner.nextInt();
+
+        col = scanner.nextInt();
+
+        int inputArray[][] = new int[row][col];
+
+        for (int i = 0; i < row; i++) {
+
+            for (int j = 0; j < col; j++) {
+
+                inputArray[i][j] = scanner.nextInt();
+
+            }
+
+        }
+
+        for (int i = 0; i < row; i++) {
+
+            for (int j = 0; j < i; j++) {
+
+                if (inputArray[i][j] != 0) {
+
+                    isUpperTriangular = false;
+
+                    break;
+
+                }
+
+            }
+
+            if (!isUpperTriangular) {
+
+                break;
+
+            }
+
+        }
+
+        //8
+
+        if(isUpperTriangular){
+
+            System.out.println("yes");
+
+        }else{
+
+            System.out.println("no");
+
+        }
+
+    }
+
+}
+
+Lower Triangular Matrix
+
+A lower triangular matrix is a square matrix in which all the elements above the diagonal are zero.
+
+That is, all the non-zero elements are in the lower triangle:
+
+Write a JAVA program to find whether a given matrix is a lower triangular matrix or not.
+
+
+Input Format:
+
+The input consists of (n*n+1) integers. The first integer corresponds to the number of rows/columns in the matrix.
+
+The remaining integers correspond to the elements in the matrix. The elements are read in row wise order,
+
+first row first, then second row and so on. Assume that the maximum value of m and n is 5.
+
+ 
+
+Output Format:
+
+Print "yes" if it is a lower triangular matrix . Print "no" if it is not a lower triangular matrix.
+
+ 
+
+Sample Input 1:
+
+2
+
+1 0
+
+2 3
+
+ 
+
+Sample Output 1:
+
+yes
+
+Input (stdin)
+
+2
+1 0
+2 3
+
+
+Output (stdout)
+
+yes
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+public class Main
+
+{
+
+public static void main(String args[])throws Exception
+
+{
+
+Scanner sc=new Scanner(System.in);
+
+int m=sc.nextInt();
+
+int A[][]=new int[m][m];
+
+for(int i=0;i<m;i++)
+
+{
+
+for(int j=0;j<m;j++)
+
+{
+
+A[i][j]=sc.nextInt();
+
+}
+
+        }
+
+int p=0;
+
+for(int i=0;i<m;i++)
+
+{
+
+for(int j=i+1;j<m;j++)
+
+{
+
+if(A[i][j]!=0) 
+
+{
+
+p=1;
+
+break;
+
+}
+
+}
+
+}
+
+if(p==0)
+
+System.out.println("yes");
+
+else
+
+System.out.println("no");
+
+}
+
+}
