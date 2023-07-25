@@ -1,0 +1,1229 @@
+ Sum and Difference
+
+Write a Java program to get 2 numbers from the user and calculate their sum and difference using '+' and '-' operators respectively. Print the corresponding sum and difference of the numbers as output in the console.
+
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+ 
+
+Output format:
+
+First output will be the sum of two integers
+
+Second output will be the difference of two integers
+
+ 
+
+Sample Input:
+
+55
+
+34
+
+ 
+
+Sample Output:
+
+89
+
+21
+
+Input (stdin)
+
+20
+10
+
+
+Output (stdout)
+
+30
+10
+
+ 
+
+Input (stdin)
+
+3
+2
+
+
+Output (stdout)
+
+5
+1
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int a = s.nextInt();
+
+    int b = s.nextInt();
+
+    System.out.printf("%d%n", a + b);
+
+    System.out.printf("%d%n", a - b);
+
+  }
+
+}
+
+Product and Division
+
+Write a program to get 2 numbers from the user and calculate their product, quotient,
+
+and remainder using '*', '/' and '%' operators respectively. Print the corresponding product,
+
+quotient and remainder of the numbers as output in the console.
+
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+ 
+
+Output format:
+
+The first output will be the product of two integers
+
+The second output will be the quotient
+
+The third output will be the remainder
+
+ 
+
+Sample Input:
+
+50
+
+10
+
+ 
+
+Sample Output:
+
+500
+
+5
+
+0
+
+Input (stdin)
+
+11
+5
+
+
+Output (stdout)
+
+55
+2
+1
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int a = s.nextInt();
+
+    int b = s.nextInt();
+
+    System.out.printf("%d%n", a * b);
+
+    System.out.printf("%d%n", a / b);
+
+    System.out.printf("%d%n", a % b);
+
+  }
+
+}
+
+Swapping two numbers
+
+Write a java program to get 2 numbers from the user and swap their values without any loss of data.
+
+You can make use of additional variable for swapping.
+
+Print the corresponding swapped values of the two numbers as output in the console.
+
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+ 
+
+Output format:
+
+The output will be integers(swapped values)
+
+ 
+
+Sample Input:
+
+20
+
+10
+
+ 
+
+Sample Output:
+
+10
+
+20
+
+Input (stdin)
+
+5
+10
+
+
+Output (stdout)
+
+10
+5
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    int temp;
+
+    Scanner s = new Scanner(System.in);
+
+    int a = s.nextInt();
+
+    int b = s.nextInt();
+
+    temp = a;
+
+    a = b;
+
+    b = temp;
+
+    System.out.printf("%d%n",a);
+
+    System.out.printf("%d",b);
+
+  }
+
+}
+
+Swapping two numbers without third variable
+
+Write a java program to swap two values without using the 3rd variable.
+
+
+Input format:
+
+First input: an integer
+
+Second input: an integer
+
+ 
+
+Output format:
+
+The output will be integers(swapped values)
+
+ 
+
+Sample Input:
+
+10
+
+20
+
+ 
+
+Sample Output:
+
+20
+
+10
+
+Input (stdin)
+
+1
+2
+
+
+Output (stdout)
+
+2
+1
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int a = s.nextInt();
+
+    int b = s.nextInt();
+
+    a = a+b;
+
+    b = a-b;
+
+    a = a-b;
+
+    System.out.printf("%d%n",a);
+
+    System.out.printf("%d",b);
+
+  }
+
+}
+
+Average Calculation
+
+A teacher wants to compute the average of 5 students in her class.
+
+Write a program to help her to find the average.
+
+The average is the sum of all the numbers, then divided by the total numbers.
+
+
+Input format:
+
+First input: 1st student mark in float
+
+Second input: 2nd student mark in float
+
+Third input: 3rd student mark in float
+
+Fourth input: 4th student mark in float
+
+Fifth input: 5th student mark in float
+
+ 
+
+Output format:
+
+The output value should be in float with 2 decimal places.
+
+ 
+
+Sample Input:
+
+10 
+
+20
+
+30
+
+40
+
+50
+
+ 
+
+Sample Output:
+
+30.00
+
+Input (stdin)
+
+2
+5
+6
+9
+10
+
+
+Output (stdout)
+
+6.00
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    Float a = s.nextFloat();
+
+    Float b = s.nextFloat();
+
+    Float c = s.nextFloat();
+
+    Float d = s.nextFloat();
+
+    Float e = s.nextFloat();
+
+    Float t = (a+b+c+d+e);
+
+    System.out.printf("%.2f",t/5);
+
+  }
+
+}
+
+Area Calculation
+
+Sheela has three things in her bag. She wants to compute the area of 3 things but 3 things are in different shapes.
+
+The three things are in a square shape, rectangular shape, and circular shape respectively. 
+
+Write a program to help Sheela to calculate the area of different shapes.
+
+
+Input format:
+
+First input: a side of a square in integer
+
+Second input: length of a rectangle in integer
+
+Third input: breadth of a rectangle in integer
+
+Fourth input: radius of a circle in float
+
+ 
+
+Output format:
+
+The first output should be the area of a square in integer
+
+The second output should be the area of a rectangle in integer
+
+The third output should be the area of a circle in float with 2 decimal places
+
+ 
+
+Sample Input:
+
+5
+
+5
+
+4
+
+2.0
+
+ 
+
+Sample Output:
+
+25
+
+20
+
+12.56
+
+Input (stdin)
+
+2
+3
+6
+5.0
+
+
+Output (stdout)
+
+4
+18
+78.50
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner sc=new Scanner(System.in);
+
+     int a=sc.nextInt();
+
+     int b=sc.nextInt();
+
+     int c=sc.nextInt();
+
+     float d=sc.nextFloat();
+
+     double e=(3.14*d*d)*100;
+
+     System.out.println(a*a);
+
+       System.out.println(b*c);
+
+       System.out.printf("%.02f",Math.floor(e)*0.01);
+
+    }
+
+}
+
+Simple Interest
+
+Sara wished to build a new house but she didn't have a sufficient amount.
+
+So, she is planning to borrow some money from the bank on simple interest.
+
+ When she is borrowing some money from the bank, she has to pay back the original
+
+amount accompanied by a certain amount of interest on that amount. She wants to find
+
+the interest for borrowed money within a certain period. Help her to find the simple interest. 
+
+
+Input format:
+
+The first line containing an integer value denoting the borrowed amount(principal amount)
+
+The second line containing an integer value denoting the period in years
+
+The third line containing the float value denoting the rate of interest
+
+ 
+
+Output format:
+
+Print the simple interest in float with 2 decimal places.
+
+ 
+
+Sample Input:
+
+15000
+
+2
+
+2.8
+
+ 
+
+Sample Output:
+
+840.00
+
+Input (stdin)
+
+3000
+2
+5.0
+
+
+Output (stdout)
+
+300.00
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int p = s.nextInt();
+
+    int t = s.nextInt();
+
+    Float r = s.nextFloat();
+
+    Float si = (p*t*r)/100;
+
+    System.out.printf("%f",si);
+
+  }
+
+}
+
+Power of a Number
+
+pow() function is used to calculate the power of any base and it is defined in java.lang.Math package.
+
+Write a program to read X as the base and N as the power and calculate the result (X^N - X to the power of N).
+
+
+Input format:
+
+The first line containing integer denotes the base(X)
+
+The second line containing integer denotes the power(N)
+
+ 
+
+Output format:
+
+Print the power of a number
+
+ 
+
+Sample Input:
+
+2
+
+3
+
+ 
+
+Sample Output:
+
+8
+
+Input (stdin)
+
+5
+6
+
+
+Output (stdout)
+
+15625
+
+ 
+
+Input (stdin)
+
+3
+2
+
+
+Output (stdout)
+
+9
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int b = s.nextInt();
+
+    int e = s.nextInt();
+
+    double pn = Math.pow(b,e);
+
+    System.out.printf("%f",pn);
+
+  }
+
+}
+
+Ternary Operator
+
+The conditional operator is also known as ternary operator [exp? true: false] can be used to make an either-or choice.
+
+ Write a program to get a number from the user and find out whether it is odd or even.
+
+
+Input format:
+
+The input containing integer denotes the given number 
+
+ 
+
+Output format:
+
+If given number is even, print "Even". Otherwise, print "Odd".
+
+ 
+
+Sample Input:
+
+5
+
+ 
+
+Sample Output:
+
+Odd
+
+Input (stdin)
+
+26
+
+
+Output (stdout)
+
+Even
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+    {
+
+        int n;
+
+        Scanner s = new Scanner(System.in);
+
+        n = s.nextInt();
+
+        if(n % 2 == 0)
+
+        {
+
+            System.out.println("Even");
+
+        }
+
+        else
+
+        {
+
+            System.out.println("Odd");
+
+}
+
+    }
+
+}
+
+Fencing The Ground
+
+The college ground is rectangular in shape. Management decides to build a fence around the ground.
+
+In order to help the construction workers to build a straight fence, they planned to place a thick rope around the ground.
+
+They wanted to buy only the exact length of the rope that is needed.
+
+They also wanted to cover the entire ground with a thick carpet during the rainy season.
+
+They wanted to buy only the exact quantity of carpet that is needed. They requested your help.
+
+ Can you please help them by writing a program to find the exact length of the rope and the exact quantity
+
+of carper that is required?
+
+
+Input Format:
+
+Input consists of 2 integers.
+
+The first integer corresponds to the length of the ground
+
+The second integer corresponds to the breadth of the ground.
+
+ 
+
+Output Format:
+
+Output consists of 2 integers.
+
+The first integer corresponds to the exact length of the rope
+
+The second integer corresponds to the exact quantity of carper.
+
+ 
+
+Sample Input:
+
+50
+
+20
+
+ 
+
+Sample Output:
+
+140m
+
+1000sqm
+
+Input (stdin)
+
+80
+20
+
+
+Output (stdout)
+
+200m
+1600sqm
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int l = s.nextInt();
+
+    int b = s.nextInt();
+
+    int r = (2*l)+(2*b);
+
+    int c = l*b;
+
+    System.out.println(""+r+"m");
+
+    System.out.println(""+c+"sqm");
+
+  }
+
+}
+
+spliting into teams
+
+During the Physical Education hour, PT sir has decided to conduct some team games.
+
+He wants to split the students in the class into equal-sized teams.
+
+In some cases, there may be some students who are left out from teams and he wanted to use the left out,
+
+ students, to assist him in conducting the team games. For instance, if there are 50 students in the class and
+
+if the class has to be divided into 7 equal-sized teams, 7 students will be there in each team and 1 student will be left out.
+
+ PT sir asks your help to automate this team splitting task. Can you please help him out?
+
+
+Input Format:
+
+Input consists of 2 integers.
+
+The first integer corresponds to the number of students in the class.
+
+The second integer corresponds to the number of teams.
+
+ 
+
+Output Format:
+
+Output consists of 2 integers.
+
+The first integer corresponds to the number of students in the each team.
+
+The second integer corresponds to the remaining students.
+
+ 
+
+Sample Input:
+
+60
+
+8
+
+ 
+
+Sample Output:
+
+The number of students in each team is 7 and left out is 4
+
+Input (stdin)
+
+40
+6
+
+
+Output (stdout)
+
+The number of students in each team is 6 and left out is 4
+
+ 
+
+Input (stdin)
+
+80
+3
+
+
+Output (stdout)
+
+The number of students in each team is 26 and left out is 2
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int A = s.nextInt();
+
+    int T = s.nextInt();
+
+    int St = A/T;
+
+    int L = (A-(T*St));
+
+    System.out.println("The number of students in each team is "+St+" and left out is "+L+"");
+
+  }
+
+}
+
+3 idiots
+
+Ajay, Binoy, and Chandru were very close friends at school.
+
+They were very good in Mathematics and they were the pet students of Emily Mam.
+
+Their gang was known as 3-idiots. Ajay, Binoy, and Chandru live in the same locality.
+
+A new student Dinesh joins their class and he wanted to be friends with them.
+
+He asked Binoy about his house address. Binoy wanted to test Dinesh's mathematical skills.
+
+Binoy told Dinesh that his house is at the midpoint of the line joining Ajay's house and Chandru's house.
+
+Dinesh was puzzled. Can you help Dinesh out? Given the coordinates of the 2 endpoints of a line (x1,y1) and (x2,y2),
+
+write a  program to find the midpoint of the line.
+
+
+Input Format:
+
+Input consists of 4 integers.
+
+The first integer corresponds to x1 .
+
+The second integer corresponds to y1.
+
+he third integer corresponds to x2.
+
+he fourth integer corresponds to y2.
+
+ 
+
+Output Format:
+
+Refer Sample Input and Output for exact formatting specifications.
+
+[All floating point values are displayed correct to 1 decimal place]
+
+ 
+
+Sample Input:
+
+2
+
+4
+
+10
+
+15
+
+ 
+
+Sample Output:
+
+Binoy's house is located at (6.0,9.5)
+
+Input (stdin)
+
+5
+4
+3
+2
+
+
+Output (stdout)
+
+Binoy's house is located at (4.0,3.0)
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int x1 = s.nextInt();
+
+    int y1 = s.nextInt();
+
+    int x2 = s.nextInt();
+
+    int y2 = s.nextInt();
+
+    double A = ((x1+x2)/2.0);
+
+    double B = ((y1+y2)/2.0);
+
+    System.out.println("Binoy's house is located at ("+A+","+B+")");
+
+  }
+
+}
+
+Profit Calculation
+
+Each Sunday, a newspaper agency sells x copies of a certain newspaper for Rs.a per copy.
+
+The cost to the agency of each newspaper is Rs.b. The agency pays a fixed cost for storage,
+
+delivery and so on of Rs.100 per Sunday. The newspaper agency wants to calculate the profit obtained on Sundays.
+
+ Can you please help them out by writing a program to compute the profit given x, a and b.
+
+
+Input Format:
+
+Input consists of 3 integers --- x, a and b.
+
+X is the number of copies sold, a is the cost per copy and b is the cost the agency spends per copy.
+
+ 
+
+Output Format:
+
+Refer Sample Input and Output for exact formatting specifications.
+
+ 
+
+Sample Input:
+
+1000
+
+2
+
+1
+
+ 
+
+Sample Output:
+
+The profit obtained is Rs.900
+
+Input (stdin)
+
+300
+2
+1
+
+
+Output (stdout)
+
+The profit obtained is Rs.200
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int n = s.nextInt();
+
+    int c = s.nextInt();
+
+    int Si = s.nextInt();
+
+    int p = ((n*c)-(n*Si))-100;
+
+    System.out.println("The profit obtained is Rs."+p+"");
+
+  }
+
+}
+
+Alice in Wonderland
+
+Alice was bored that day, so she was sitting on the riverbank. Suddenly she notices a talking,
+
+White Rabbit with a pocket watch. It ran fast, and she followed it, down a rabbit hole.
+
+She fell into the hole and found a magical wonderland with dark trees, beautiful flowers.
+
+ She found many ways numbered from 1,2,3,........18.she was confused which is the right way
+
+that will lead her to her home. She found a cute bird, standing in one of the trees.
+
+Alice asked the bird the way to go back to her home.
+
+ The bird said a two-digit number( say 23 ) and asked her to find the sum of its digits (2+3=5) and
+
+ that numbered way will lead her to her home. Alice was already confused, so pls help Alice in finding
+
+ the route to her home.
+
+
+Input Format:
+
+Input consists of an integer corresponding to the 2-digit number.
+
+ 
+
+Output Format:
+
+Output consists of an integer corresponding to the sum of its digits.
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+Sample Input:
+
+23
+
+ 
+
+﻿Sample Output:
+
+Alice must go in path-5
+
+Input (stdin)
+
+26
+
+
+Output (stdout)
+
+Alice must go in path-8
+
+ 
+
+Program :-
+
+import java.util.Scanner;
+
+class Main
+
+{
+
+  public static void main(String args[])
+
+  {
+
+    Scanner s = new Scanner(System.in);
+
+    int b = s.nextInt();
+
+    int Al = ((b%10)+(b/10));
+
+    System.out.println("Alice must go in path-"+Al+"");
+
+  }
+
+}
