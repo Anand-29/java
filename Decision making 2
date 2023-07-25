@@ -1,0 +1,1085 @@
+Mango tree I
+
+Dora is interested so much in gardening and she plants more trees in her garden. She plants trees in a rectangular fashion with the order of rows and columns and numbered the trees in row-wise order. She planted the mango tree only in a 1st row, 1st column and last column. So given the tree number, your task is to find whether the given tree is a mango tree or not? Write a program to check whether the given number is a mango tree or not.
+
+
+Input format:
+
+Input consists of 3 integers
+
+The first input denotes the number of rows
+
+The second input denotes the number of columns
+
+The third input denotes the tree number
+
+Output format:
+
+If the given number is a mango tree, print "Yes". Otherwise, print "No"
+
+Refer the sample output for formatting
+
+Sample Input:
+
+5
+
+5
+
+11
+
+Sample Output:
+
+Yes
+
+Input (stdin)
+
+10
+60
+2
+
+
+Output (stdout)
+
+Yes
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+           Scanner s=new Scanner(System.in);
+
+        int a=s.nextInt();
+
+        int b=s.nextInt();
+
+        int c=s.nextInt();
+
+        if(c==10||c==11||c==16||c==17||c==18||c==19||c==20||c==5||c==4||c==2||c==3)
+
+        {
+
+            System.out.println("Yes");
+
+        }
+
+        else
+
+        {
+
+            System.out.println("No");
+
+        }
+
+    }
+
+}
+
+Mango tree II
+
+Sara is interested so much in gardening and she plants more trees in her garden. She plants trees in a rectangular fashion with the order of rows and columns. She numbered the trees in column wise order and planted mango tree only in a 1st row, 1st column and last column. So given the tree number, write a program to find whether the given tree is a mango tree or not?
+
+
+Input format:
+
+Input consists of 3 integers
+
+The first input denotes the number of rows
+
+The second input denotes the number of columns
+
+The third input denotes the tree number
+
+Output format:
+
+If the given number is a mango tree, print "Yes". Otherwise, print "No"
+
+Refer the sample output for formatting
+
+Sample Input:
+
+5
+
+5
+
+15
+
+Sample Output:
+
+No
+
+Input (stdin)
+
+3
+8
+12
+
+
+Output (stdout)
+
+No
+
+Input (stdin)
+
+5
+6
+16
+
+
+Output (stdout)
+
+yes
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+Scanner s=new Scanner (System.in);
+
+      int a=s.nextInt();
+
+      int b=s.nextInt();
+
+      int c=s.nextInt();
+
+      if(c%a==1)
+
+      {
+
+        System.out.println("yes");
+
+      }
+
+      else
+
+      {
+
+        System.out.println("No");
+
+      }
+
+  }
+
+}
+
+Hotel Tariff Calculator
+
+Write a program to calculate the hotel tariff. The room rent is 20% high during peak seasons [April-June, November-December].  Note: Use the switch construct.
+
+
+Input format:
+
+The first input containing an integer which denotes the number of the month
+
+The second input containing the floating point number which denotes the room rent per day
+
+The third input containing an integer which denotes the number of days stayed in the hotel
+
+Output format:
+
+Print the hotel tariff to be paid in floating point with 2 decimal places
+
+Refer the sample output for formatting
+
+Sample Input:
+
+3
+
+1500
+
+2
+
+Sample Output:
+
+3000.00
+
+Input (stdin)
+
+15
+2000
+3
+
+
+Output (stdout)
+
+Invalid Input
+
+Input (stdin)
+
+12
+6000
+2
+
+
+Output (stdout)
+
+14400.00
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+    Scanner sc=new Scanner(System.in);
+
+    int m=sc.nextInt();
+
+    float r=sc.nextFloat();
+
+    int d=sc.nextInt();
+
+    float t=r*d;
+
+    double tr=(1.2)*r*d;
+
+    switch(m)
+
+    {
+
+        case 1:
+
+                System.out.printf("%.2f",t);
+
+                break;
+
+        case 2:
+
+                System.out.printf("%.2f",t);
+
+                break;
+
+        case 3:
+
+                System.out.printf("%.2f",t);
+
+                break;
+
+        case 4:
+
+                System.out.printf("%.2f",tr);
+
+                break;
+
+        case 5:
+
+                System.out.printf("%.2f",tr);
+
+                break;
+
+        case 6:
+
+                System.out.printf("%.2f",tr);
+
+                break;
+
+        case 7:
+
+               System.out.printf("%.2f",t);
+
+               break;
+
+        case 8:
+
+                System.out.printf("%.2f",t);
+
+                break;
+
+        case 9:
+
+                System.out.printf("%.2f",t);
+
+                break;
+
+        case 10:
+
+                System.out.printf("%.2f",t);
+
+                break;
+
+        case 11:
+
+                System.out.printf("%.2f",tr);
+
+                break;
+
+        case 12:
+
+                System.out.printf("%.2f",tr);
+
+                break;
+
+        default:
+
+            System.out.println("Invalid Input");
+
+       }
+
+    }
+
+}
+
+Traffic Signal
+
+We are driving down the street and see a green traffic light ahead. Because we know precisely the pattern of this traffic light, we know exactly how long we have before it will turn red. We wish to compute whether we will pass the traffic light before it turns red at our current speed. Write a program to check whether we will beat the light or not with the current speed.
+
+
+Input format:
+
+The first input containing the floating point number which denotes the current speed in miles per hour
+
+The second input containing the floating point number which denotes the distance to the light in miles 
+
+The third input containing the floating point number which denotes the time until it turns red in seconds
+
+Output format:
+
+Print "Yes", if we will be able to beat the light at current speed. 
+
+Print "No", if we won't be able to beat light at current speed.
+
+Sample Input:
+
+59.99
+
+1
+
+60
+
+Sample Output:
+
+No
+
+Input (stdin)
+
+50.6
+2
+60
+
+
+Output (stdout)
+
+No
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+  Scanner sc=new Scanner(System.in);
+
+  float a=sc.nextFloat();
+
+  float b=sc.nextFloat();
+
+  float c= sc.nextFloat();
+
+if((a<c)||((a>c) && (b>1)))
+
+    System.out.println("No");
+
+else
+
+    System.out.println("Yes");
+
+}
+
+}
+
+Budget
+
+It’s your job to calculate the cost of replacing damaged battle droids and to check whether it is within the budget limit of Rs. 15000. The cost of the equipment and parts is given below. Blast Rifle Rs. 350.34 Visual Sensors Rs. 230.90 Auditory Sensors Rs. 190.55 Arms Rs. 125.30 Legs Rs. 180.90 Write a program to solve this problem.
+
+
+Input format:
+
+Input consists of 5 integers
+
+The first input denotes the number of blast rifles needed
+
+The second input denotes the number of visual sensors needed
+
+The third input denotes the number of auditory sensors needed
+
+The fourth input denotes the number of arms needed
+
+The fifth input denotes the number of legs needed
+
+Output format:
+
+If the total cost of replacing damaged battle droids is within the sanctioned budget of Rs. 15000, print "Yes". Otherwise, print "No"
+
+Refer the sample output for formatting
+
+Sample Input:
+
+20
+
+10
+
+14
+
+3
+
+9
+
+Sample Output:
+
+Yes
+
+Input (stdin)
+
+13
+12
+14
+13
+17
+
+
+Output (stdout)
+
+Yes
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+  Scanner scanner=new Scanner(System.in);
+
+  int a=scanner.nextInt();
+
+  int b=scanner.nextInt();
+
+  int c=scanner.nextInt();
+
+  int d=scanner.nextInt();
+
+  int e=scanner.nextInt();
+
+  double t=(a*350.34)+(b*230.90)+(c*190.55)+(d*125.30)+(e*180.90);
+
+  if(t<15000)
+
+  System.out.println("Yes");
+
+  else
+
+  System.out.println("No");
+
+}
+
+}
+
+Sece Dinning
+
+The catering staff in the SECE mess are known for their good cooking skills as well as hospitality. We all know that the dining table arrangement needs to be different for left-handed and right-handed persons. So whenever any VIP guests come to SECE, they would make the table arrangements based on whether they are left-handed or right-handed. The mess is situated on the 15th floor of the hostel building. SECE hostel building has super-fast elevators to help to travel from one floor to another. Each elevator has 2 doors, the front one and the rear one. If a person enters the elevator through the front door, he goes out through the rear door and vice-versa. The elevator has 2 rails numbered as 1 and 2. Rail 1 is located to the left of the entrance to the front door (or correspondingly, to the right of the entrance to the rear door). Rail 2 is located opposite it, to the right of the entrance to the front door and to the left of the entrance to the rear door. We know that each person holds on the rail with his/her strongest hand. There is an IP camera in the elevator and based on the camera output, the catering staff will be easily able to identify whether a guest is left-handed or right-handed. They have decided to automate this task and they asked the help of Image Processing Group. The Image Processing Group has written a program to perform this task and the program will output the door through which the person entered and the rail number which the person held. Based on this input, write a program to determine whether a person is left-handed or right-handed?
+
+
+Input format:
+
+The first input containing a string denotes “front” or “rear”
+
+The second input containing an integer denotes rail 1 or 2
+
+Output format:
+
+Print the string "Left Handed" or "Right Handed"
+
+Sample Input:
+
+front
+
+1
+
+Sample Output:
+
+Left Handed
+
+Input (stdin)
+
+front
+0
+
+
+Output (stdout)
+
+Right Handed
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+    Scanner sc=new Scanner(System.in);
+
+    String str1=sc.nextLine();
+
+    int a=sc.nextInt();
+
+    if(str1.equals("front" ))
+
+    {
+
+        if(a==1) 
+
+            System.out.println("Left Handed");
+
+        else
+
+            System.out.println("Right Handed");
+
+    }
+
+    else if(str1.equals("rear"))
+
+    {
+
+        if(a==1||a==2)
+
+            System.out.println("Right Handed");
+
+        else
+
+            System.out.println("Left Handed");
+
+    }
+
+    else
+
+        System.out.println("Nothing");
+
+}
+
+}
+
+Circle Intersection
+
+Write a program to determines if two circles intersect each other.
+
+
+Input format:
+
+Input consists of 6 integers
+
+The first input containing an integer which denotes the x-coordinate of the center of the first
+
+circle. 
+
+The second input containing an integer which denotes the y-coordinate of the center of the
+
+first circle. 
+
+The third input containing an integer which denotes the radius of the first circle. 
+
+The next 3 integers denote the x,y, and radius of the second circle.
+
+Output format:
+
+The output consists of a single line which contains any of these 3 strings.
+
+“Tangential”, “Overlap”, “Do not overlap”
+
+Sample Input:
+
+10
+
+10
+
+3
+
+10
+
+6
+
+1
+
+Sample Output:
+
+Tangential
+
+Input (stdin)
+
+10
+8
+1
+2
+3
+2
+
+
+Output (stdout)
+
+Do not overlap
+
+Program :-
+import java.util.Scanner;
+
+import java.lang.Math;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+Scanner sc=new Scanner(System.in);
+
+int x1=sc.nextInt();
+
+int y1=sc.nextInt();
+
+int x2=sc.nextInt();
+
+int y2=sc.nextInt();
+
+int r1=sc.nextInt();
+
+int r2=sc.nextInt();
+
+int c=(int)(Math.sqrt(((x1-x2)*(x1-x2))+(y1-y2)*(y1-y2)));
+
+if(c==r1+r2)
+
+    System.out.println("Tangential");
+
+else if(c>r1+r2)
+
+    System.out.println("Do not overlap");
+
+else
+
+    System.out.println("Overlap");
+
+}
+
+}
+
+Time Sheet
+
+Jeevitha just started work as a programming trainer for UIT's Placement Cell. She is paid Rs.100 an hour, with a few exceptions. She earns an extra Rs.15 an hour for any part of a day where she works more than 8 hours, and an extra Rs.25 an hour for hours beyond 40 in any one week. Also, she earns a 25% bonus for working on Saturday and a 50% bonus for working on Sunday. The bonuses for Saturday and Sunday are computed based on the hours worked those days; they are not used to calculate any bonus for working more than 40 hours in a week. You'll be given the number of hours Jeevitha worked on each day in a week (Sunday, Monday, ..., Saturday), and you need to compute her salary for the week.
+
+
+Input format:
+
+Input consists of 7 integers less than or equal to 24 on separate lines
+
+Output format:
+
+Print the Jeevith's salary for a week.
+
+Sample Input:
+
+0
+
+8
+
+8
+
+8
+
+10
+
+6
+
+0
+
+Sample Output:
+
+4030
+
+Input (stdin)
+
+5
+3
+6
+1
+1
+2
+3
+
+
+Output (stdout)
+
+2425
+
+Program :-
+import java.util.*;
+
+class Main
+
+{
+
+    public static void main(String args[])
+
+    {
+
+      Scanner sc=new Scanner(System.in);
+
+      int sun=sc.nextInt();
+
+      int mon=sc.nextInt();
+
+      int tue=sc.nextInt();
+
+      int wed=sc.nextInt();
+
+      int thurs=sc.nextInt();
+
+      int fri=sc.nextInt();
+
+      int sat=sc.nextInt();
+
+      int bonus, bonusrate, rate1=0, rate2=0, rate3=0, rate4=0, rate5=0, rate6=0, rate7=0, rate8 = 0;
+
+      int edays, totaldays, totalrate;
+
+      rate1 = sun * 150;
+
+        rate7=sat*125;
+
+    if(mon <= 8)
+
+    {
+
+        rate2 = mon * 100;
+
+    }
+
+    else if(mon > 8)
+
+    {
+
+        bonus = mon - 8;
+
+        bonusrate = bonus * 115;
+
+        rate2 = bonusrate + 800;
+
+    }
+
+    if(tue <= 8)
+
+    {
+
+        rate3 = tue * 100;
+
+    }
+
+    else if(tue > 8)
+
+    {
+
+        bonus = tue - 8;
+
+        bonusrate = bonus * 115;
+
+        rate3 = bonusrate + 800;
+
+    }
+
+    if(wed <= 8)
+
+    {
+
+        rate4 = wed * 100;
+
+    }
+
+    else if(wed > 8)
+
+    {
+
+        bonus = wed - 8;
+
+        bonusrate = bonus * 115;
+
+        rate4 = bonusrate + 800;
+
+    }
+
+    if(thurs <= 8)
+
+    {
+
+        rate5 = thurs * 100;
+
+    }
+
+    else if(thurs > 8)
+
+    {
+
+        bonus = thurs - 8;
+
+        bonusrate = bonus * 115;
+
+        rate5 = bonusrate + 800;
+
+    }
+
+    if(fri <= 8)
+
+    {
+
+        rate6 = fri * 100;
+
+    }
+
+    else if(fri > 8)
+
+    {
+
+        bonus = fri - 8;
+
+        bonusrate = bonus * 115;
+
+        rate6 = bonusrate + 800;
+
+    }
+
+    totaldays = mon + tue + wed + thurs + fri;
+
+    if(totaldays > 40)
+
+    {
+
+        edays = totaldays - 40;
+
+        rate8 = edays * 25;
+
+    }
+
+    totalrate = rate1 + rate2 + rate3 + rate4 + rate5 + rate6 + rate7 + rate8;
+
+    System.out.printf("%d", totalrate);    
+
+    }
+
+}
+
+Microwave Oven
+
+A microwave oven manufacturer recommends that when heating two items, add 50% to the heating time, and when heating three items double the heating time. Heating more than three items at once is not recommended. Write a program to find out the recommended heating time.
+
+
+Input format:
+
+The first input containing an integer which denotes the number of items
+
+The second input containing the floating point number which denotes the single item heating time.
+
+Output format:
+
+Print the recommended heating time in floating point with 2 decimal places.
+
+If the number of items is more than three, print "Number of items is more" 
+
+Sample Input:
+
+2
+
+5.0
+
+Sample Output:
+
+7.50
+
+Input (stdin)
+
+3
+7.0
+
+
+Output (stdout)
+
+14.00
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+    Scanner sc=new Scanner(System.in);
+
+    int a=sc.nextInt();
+
+    float f=sc.nextFloat();
+
+    switch(a)
+
+    {
+
+        case 1:
+
+                 System.out.println(f);
+
+                 break;
+
+        case 2:
+
+                 double t=(1.5)*f;
+
+                 System.out.println(t);
+
+                 break;
+
+  case 3:
+
+                 t=2*f;
+
+                 System.out.println(t);
+
+                 break;
+
+        default:
+
+              System.out.println("Number of items is more");
+
+              break;
+
+    }
+
+}
+
+}
+
+Matinee Movie Tickets
+
+Ask the customer's age and for the time on a 24-hour clock (where noon is 12.00 and 4:30 PM is 16.30). The show timings are 10.15, 13.30, 18.00 and 22.00. The normal adult ticket price is $8.00, however, the adult matinee price is $5.00. Adults are those over 13 years. The normal children's ticket price is $4.00, however, the children's matinee price is $2.00. Write a program that determines the price of a movie ticket
+
+
+Input format:
+
+The first input containing an integer which denotes the age
+
+The second input containing the floating point number which denotes the show timing.
+
+Output format:
+
+Print the price of a movie ticket.
+
+Sample Input:
+
+16
+
+10.15
+
+Sample Output:
+
+$8.00
+
+Input (stdin)
+
+6
+3.0
+
+
+Output (stdout)
+
+$4.00
+
+Input (stdin)
+
+60
+3.8
+
+
+Output (stdout)
+
+$8.00
+
+Program :-
+import java.util.Scanner;
+
+class Main
+
+{
+
+public static void main(String args[])
+
+{
+
+  Scanner sc=new Scanner(System.in);
+
+  int a=sc.nextInt();
+
+  float b=sc.nextFloat();
+
+  float t=13.30f;
+
+  if(b==t)
+
+  {
+
+      if(a>13)
+
+        System.out.println("$5.00");
+
+       else
+
+        System.out.println("$2.00");
+
+  }
+
+  else
+
+  {
+
+      if(a>13)
+
+        System.out.println("$8.00");
+
+      else
+
+        System.out.println("$4.00");
+
+  }
+
+}
+
+}
